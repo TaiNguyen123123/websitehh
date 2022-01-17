@@ -9,7 +9,7 @@ var ngtukhoi = document.getElementById('ntk')
 var doamdien = document.getElementById('doamdien')
 var electron = document.getElementById('electron')
 var oxihoa = document.getElementById('oxihoa')
-
+var ngtoHH = document.getElementsByClassName('ngtoHH')
 var data = {
     "al" : {
         "Kyhieu" : "Al",
@@ -33,28 +33,32 @@ var data = {
         "Oxihoa" : "12"
     }
 }
-
+var ngtoHH = document.getElementsByClassName('ngtoHH')
+// Al
+ngtoHH[0].addEventListener('click', function(){
+    console.log('Đây là nguyên tố Al')
+})
 al.addEventListener('click',function()
 {
-    kyhieu.textContent = data.al.Kyhieu
-    tenngto.textContent = data.al.Ten
-    ngtukhoi.textContent = data.al.Nguyentukhoi
-    Hoatri.textContent = data.al.Hoatri
-    oxihoa.textContent = data.al.oxihoa
+    KyHieu.textContent = data.al.Kyhieu
+    TenNguyenTo.textContent = data.al.Ten
+    NguyenTuKhoi.textContent = data.al.Nguyentukhoi
+    HoaTri.textContent = data.al.Hoatri
+    OxiHoa.textContent = data.al.oxihoa
 })
 cu.addEventListener('click',function()
 {
-    kyhieu.textContent = data.cu.Kyhieu
-    tenngto.textContent = data.cu.Ten
-    ngtukhoi.textContent = data.cu.Nguyentukhoi
-    Hoatri.textContent = data.cu.Hoatri
-    oxihoa.textContent = data.cu.oxihoa
+    KyHieu.textContent = data.cu.Kyhieu
+    TenNguyenTo.textContent = data.cu.Ten
+    NguyenTuKhoi.textContent = data.cu.Nguyentukhoi
+    HoaTri.textContent = data.cu.Hoatri
+    OxiHoa.textContent = data.cu.oxihoa
 })
 cl.addEventListener('click',function()
 {
-    kyhieu.textContent = data.cl.Kyhieu
-    tenngto.textContent = data.cl.Ten
-    ngtukhoi.textContent = data.cl.Nguyentukhoi
-    Hoatri.textContent = data.cl.Hoatri
-    oxihoa.textContent = data.cl.oxihoa
+    KyHieu.textContent = data.cl.Kyhieu
+    TenNguyenTo.textContent = data.cl.Ten
+    NguyenTuKhoi.textContent = data.cl.Nguyentukhoi
+    HoaTri.textContent = data.cl.Hoatri
+    OxiHoa.textContent = data.cl.oxihoa
 })
